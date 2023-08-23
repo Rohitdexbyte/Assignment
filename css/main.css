@@ -1,0 +1,213 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#sidebar{
+  display: inline-block;
+  width: 200px;
+  margin-left: 15px;
+  top:0;
+}
+
+#sidebar nav ul{
+  list-style-type: none;
+}
+
+#sidebar nav ul a{
+  text-decoration: none;
+  color: #8D93A7;
+}
+#topbar{
+  padding-top: 20px;
+  display: inline-block;
+  width: 80%;
+  background-color: #F3F3FA;
+  position: fixed;
+}
+#topbar nav{
+  text-align: center;
+}
+#topbar nav ul{
+  list-style-type: none;
+}
+#topbar nav ul li{
+  display: inline-block;
+  padding: 30px;
+  color: black;    
+}
+
+#topbar a:hover{
+  border-bottom: solid 2px #42439F;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: black;
+  
+}
+.sidelist{
+  padding: 10px 0px;
+}
+#form_event{
+  display: flex;
+}
+#for_time_and_url{
+  display: flex;
+}
+#gen_info{
+  width: 97%;
+  height: 140px;
+}
+#event_title{
+  width: 50%;
+}
+#event_title input{
+  width: 94%;
+}
+#s_date{
+  width: 25%;
+}
+#s_date input{
+  width: 90%;
+}
+#e_date{
+  width: 25%;
+}
+#e_date input{
+  width: 90%;
+}
+#stime{
+  width: 25%;
+}
+#stime input{
+  width: 90%;
+}
+#etime{
+  width: 25%;
+}
+#etime input{
+  width: 90%;
+}
+#survey_url{
+  width: 50%;
+}
+#survey_url input{
+  width: 94%;
+}
+#form_container{
+  padding: 20px;
+}
+#save_btn{
+  background-color: blue;
+  color: white;
+  width: 100px;
+  height: 25px;
+  border: none;
+  border-radius: 2px;
+  padding-bottom: 25px;
+  margin-top: 10px;
+}
+form input,textarea{
+  border: none;
+  padding: 10px;
+  box-direction: none;
+}
+
+
+.cat_button {
+  margin:20px 0px 20px 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#42439F;
+  ;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.close_btn {
+  position: absolute;
+  top: -5px;
+  right: -7px;
+  margin-top: -10px;
+  background-color: #fff;
+  border: none;
+  color: black;
+  border-radius: 20px;
+  padding: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn_checked {
+  position: absolute;
+  top: -40px;
+  right:5px;
+  margin-top: -6px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+#saveBtn{
+  width: 200px;
+  font-size: larger;
+  height: auto;
+  margin:20px 0px 20px 20px;
+  padding: 10px 20px;
+  background-color:#42439F;
+  ;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.addBtn{
+  width: 200px;
+  font-size: larger;
+  height: auto;
+  margin:20px 0px 20px 20px;
+  padding: 10px 20px;
+  background-color:#c9cad6;
+  ;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+
+.ramesh{
+  margin-top: -302px;
+  margin-left: 238px;
+}
+.catActive{
+  border-bottom: 2px solid #42439F;
+  padding-bottom: 5px;
+}
+
+.genActive{
+  border-bottom: 2px solid  #42439F;
+  padding-bottom: 5px;
+}
+
+.selected {
+  background-color: green;
+}
+
+.tagActive{
+  border-bottom: 2px solid  #42439F;
+  padding-bottom: 5px;
+}
+.pushActive{
+  border-bottom: 2px solid  #42439F;
+  padding-bottom: 5px;
+}
+.notbutton{
+  width: 200px;
+  padding:10px 30px 10px 30px;
+  background-color: #42439F;
+}
+.userlink a{
+  color: black;
+}
