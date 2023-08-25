@@ -127,7 +127,7 @@ function save() {
       var joinedtagData = selectedtagData.join(' , '); // Join the array elements
       Swal.fire("tagData saved: " + joinedtagData).then(function() {
         // Redirect to another page after the alert is closed
-        window.location.href = 'tabl.html'; // Change this to the desired URL
+        window.location.href = 'pushnotification.html'; // Change this to the desired URL
       });
     } else {
       localStorage.removeItem('SavedtagData');

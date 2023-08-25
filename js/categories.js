@@ -133,7 +133,7 @@ function saveData() {
     var joinedData = selectedData.join(' , '); // Join the array elements
     Swal.fire("Data saved: " + joinedData).then(function() {
       // Redirect to another page after the alert is closed
-      window.location.href = 'tabl.html'; // Change this to the desired URL
+      window.location.href = 'tag.html'; // Change this to the desired URL
     });
   } else {
     localStorage.removeItem('SavedData');

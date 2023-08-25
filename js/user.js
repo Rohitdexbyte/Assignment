@@ -49,6 +49,7 @@ function find(id){
                 </td>
             </tr>`
     })
+    
 }
 
 
@@ -102,7 +103,7 @@ function save(){
     allData()
 
     //remove form data
-    document.getElementById('form').reset()
+    // document.getElementById('form').reset()
 }
 
 function removeData(id){

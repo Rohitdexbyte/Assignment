@@ -31,7 +31,11 @@ function formEvent(event) {
   Swal.fire({
     html:storedData,
     timer:10000,
-  });
+  })
+  .then(() => {
+
+    window.location.href = "categories.html";
+});
 }
 
 

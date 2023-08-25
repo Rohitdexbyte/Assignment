@@ -16,13 +16,26 @@
 #sidebar nav ul a{
   text-decoration: none;
   color: #8D93A7;
+  font-weight: 400;
 }
+
+#logoMenu{
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
+#logOut{
+  margin-top: 100px;
+}
+
 #topbar{
-  padding-top: 20px;
+  position: absolute;
+
   display: inline-block;
   width: 80%;
   background-color: #F3F3FA;
-  position: fixed;
+
+  
 }
 #topbar nav{
   text-align: center;
@@ -33,7 +46,8 @@
 #topbar nav ul li{
   display: inline-block;
   padding: 30px;
-  color: black;    
+  color: black;  
+  font-weight: 700;  
 }
 
 #topbar a:hover{
