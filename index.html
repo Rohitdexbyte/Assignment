@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
- 
+
 
   <link rel='stylesheet' type='text/css' href='css/main.css'>
   <script src="ckeditor/ckeditor.js"></script>
+
 
   <title>Multipage Assignment</title>
 
@@ -51,7 +52,7 @@
           <a href="#">Setting & notifications</a>
         </div>
         <div class="sidelist" id="logOut">
-          <img src="images/logout.png" alt="logout" >
+          <img src="images/logout.png" alt="logout">
           <a href="#">Logout</a>
         </div>
       </ul>
@@ -60,70 +61,81 @@
   <section id="topbar">
     <header>
       <nav>
-        <ul>
-          <a href="index.html" class="genActive">
-            <li>General Setting</li>
-          </a>
-          <a href="categories.html">
-            <li>Catagories</li>
-          </a>
-          <a href="tag.html">
-            <li>Tags</li>
-          </a>
-          <a href="pushnotification.html">
-            <li>Pushnotification</li>
-          </a>
-        </ul>
+        <ul class="userlink">
+          <li>
+              <a href="index.html" class="genActive">General Setting
+              </a>
+          </li>
+          <li> <a href="categories.html">
+                  Catagories
+              </a></li>
+          <li> <a href="tag.html">
+                  Tags
+              </a></li>
+
+          <li><a href="pushnotification.html">
+                  Pushnotification
+              </a></li>
+      </ul>
       </nav>
     </header>
     <div id="form_container">
       <h4>General Settings</h4>
-      <form onsubmit="formEvent(event)">
+      <form onsubmit="formEvent(event)" id="formValidation">
         <div id="form_event">
           <div id="event_title">
             <label>Event Title</label><br>
             <input type="text" name="event_title" id="eventitle"
-              placeholder="Transform Your Business Idea Into  Profitable Businees" >
+              placeholder="Transform Your Business Idea Into  Profitable Businees">
+            <br><span class="validateMessage" id="error"></span>
           </div>
           <div id="s_date">
             <label>Starting Date</label><br>
             <input type="date" name="date" id="starting_date" placeholder="03 Mar">
+            <br><span class="validateMessage" id="error1"></span>
           </div>
           <div id="e_date">
             <label>End Date</label><br>
             <input type="date" name="end_date" id="end_date" placeholder="03 Mar">
+            <br><span class="validateMessage" id="error2"></span>
           </div>
         </div>
         <br>
         <div id="for_time_and_url">
           <div id="stime">
             <label>Starting time</label><br>
-            <input type="time" name="Starting time" id="start_time">
+            <input type="time" name="time" id="start_time">
+            <br><span class="validateMessage" id="error3"></span>
           </div>
           <div id="etime">
             <label>End Time</label><br>
-            <input type="time" name="starting_time" id="end_time">
+            <input type="time" name="end_time" id="end_time">
+            <br><span class="validateMessage" id="error4"></span>
           </div>
           <div id="survey_url">
             <label>General Survey URl (optional) </label><br />
-            <input type="text" name="event_title" id="url" placeholder="https://">
+            <input type="url" name="event_title" id="url" placeholder="https://">
           </div>
         </div><br>
         <label>General Information</label>
-        <textarea type="text" name="general_info" id="gen_info"  >
+        <textarea type="text" name="general_info" id="gen_info">
         </textarea>
-
-        <input type="submit" value="Save" id="save_btn" >
+        <br><span class="validateMessage" id="error6"></span><br>
+        <input type="submit" value="Save" id="save_btn">
       </form>
     </div>
   </section>
-  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  
- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
- 
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/main.js"></script>
+
+
+
+
 </body>
 
 </html>

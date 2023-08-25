@@ -57,42 +57,44 @@
     <section id="topbar">
         <header>
             <nav>
-                <ul>
-                    <a href="index.html">
-                        <li>General Setting</li>
-                    </a>
-                    <a href="categories.html">
-                        <li>Catagories</li>
-                    </a>
-                    <a href="tag.html">
-                        <li>Tags</li>
-                    </a>
-                    <a href="pushnotification.html" class="pushActive">
-                        <li>Pushnotification</li>
-                    </a>
+                <ul class="userlink">
+                    <li>
+                        <a href="index.html">General Setting
+                        </a>
+                    </li>
+                    <li> <a href="categories.html">
+                            Catagories
+                        </a></li>
+                    <li> <a href="tag.html">
+                            Tags
+                        </a></li>
+          
+                    <li><a href="pushnotification.html" class="pushActive">
+                            Pushnotification
+                        </a></li>
                 </ul>
             </nav>
         </header>
         <div class="container">
             <h2 class="mt-5 mb-5">Push Notification</h2>
             <div class="mb-5">
-                <form id="form">
+                <form id="form" >
                     <div class="row">
 
                         <div class="form-group col-md-6 mb-3">
                             <label for="">Notification Text</label>
-                            <input type="text" name="fName" id="fullName" class="form-control"
+                            <input type="text" name="fName" id="notificationText" class="form-control"
                                 placeholder="Notification Text">
                         </div>
                         <div class="form-group col-md-6 mb-3">
                             <label for="">Send To</label>
                             <div class="input-group mb-3">
-                                <select class="custom-select" id="inputGroupSelect03"
+                                <select class="custom-select" id="inputGroupSelect"
                                     aria-label="Example select with button addon">
                                     <option selected>Individual</option>
-                                    <option value="1">CS</option>
-                                    <option value="2">IT</option>
-                                    <option value="3">IOT</option>
+                                    <option value="CS">CS</option>
+                                    <option value="IT">IT</option>
+                                    <option value="IOT">IOT</option>
                                 </select>
                             </div>
 
@@ -139,20 +141,20 @@
                             <div class="form-group col-md-3 formcontent">
 
                                 <label for="inputUrl">Date</label>
-                                <input type="date" class="form-control" id="inputUrl"
+                                <input type="date" class="form-control" id="inputDate"
                                     placeholder="Search Individual, Group & Tags" />
                             </div>
 
                             <div class="form-group col-md-3 formcontent">
 
                                 <label for="inputUrl">Time</label>
-                                <input type="time" class="form-control" id="inputUrl"
+                                <input type="time" class="form-control" id="inputTime"
                                     placeholder="Search Individual, Group & Tags" />
                             </div>
 
                             <div class="form-group col-md-4 mt-4">
 
-                                <button type="submit" id="save_value" class="btn btn-primary mb-1 notbutton">
+                                <button type="submit" id="ST" class="btn btn-primary mb-1 notbutton" onclick="pushDataNotification(event)">
                                     Send Notifications
                                 </button>
                             </div>
@@ -177,7 +179,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="js/pushnotification.js"></script>
 
 

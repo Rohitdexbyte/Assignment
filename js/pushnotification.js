@@ -27,7 +27,41 @@ $(document).ready(function(){
     });
 });
 
+function pushDataNotification(event) {
+  event.preventDefault();
 
+var notification_text = document.getElementById("notificationText").value;
+var notTime = document.getElementById("inputTime").value;
+var notDate = document.getElementById("inputDate").value;
+var inputGroup = document.getElementById("inputGroupSelect").value;
+var sendI = document.getElementById("ST").value;
+
+
+localStorage.setItem("Notifications", notification_text);
+localStorage.setItem("notificationTime", notTime);
+localStorage.setItem("notificationDate", notDate);
+localStorage.setItem("notificationGroup", inputGroup);
+localStorage.setItem("sendI", sendI);
+ 
+ 
+ 
+  var storedData = `
+ ${localStorage.getItem("Notifications")}
+
+ ${localStorage.getItem("notificationTime")}
+ ${localStorage.getItem("notificationDate")}
+ ${localStorage.getItem("notificationGroup")}
+
+ 
+ `;
+ 
+  Swal.fire({
+    
+    html: storedData,
+    
+});
+
+}
 
 
 function pushNotification() {
