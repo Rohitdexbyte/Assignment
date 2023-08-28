@@ -35,6 +35,7 @@ var notTime = document.getElementById("inputTime").value;
 var notDate = document.getElementById("inputDate").value;
 var inputGroup = document.getElementById("inputGroupSelect").value;
 var sendI = document.getElementById("ST").value;
+var ff=document.querySelectorAll('input[type=radio]')
 
 
 localStorage.setItem("Notifications", notification_text);
@@ -54,12 +55,24 @@ localStorage.setItem("sendI", sendI);
 
  
  `;
- 
+
+ if(ff.value==='option1')
+ {
+  Swal.fire({
+    
+  text:"Send Immedaitly",
+    
+});
+
+ }
+ else{
   Swal.fire({
     
     html: storedData,
     
 });
+ }
+  
 
 }
 
