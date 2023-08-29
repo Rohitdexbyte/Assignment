@@ -29,13 +29,12 @@ $(document).ready(function(){
 
 function pushDataNotification(event) {
   event.preventDefault();
-
-var notification_text = document.getElementById("notificationText").value;
-var notTime = document.getElementById("inputTime").value;
-var notDate = document.getElementById("inputDate").value;
-var inputGroup = document.getElementById("inputGroupSelect").value;
-var sendI = document.getElementById("ST").value;
-var ff=document.querySelectorAll('input[type=radio]')
+  var notification_text = document.getElementById("notificationText").value;
+  var notTime = document.getElementById("inputTime").value;
+  var notDate = document.getElementById("inputDate").value;
+  var inputGroup = document.getElementById("inputGroupSelect").value;
+  var sendI = document.getElementById("ST").value;
+  
 
 
 localStorage.setItem("Notifications", notification_text);
@@ -47,35 +46,22 @@ localStorage.setItem("sendI", sendI);
  
  
   var storedData = `
- ${localStorage.getItem("Notifications")}
+  Notifications: ${localStorage.getItem("Notifications")}
 
- ${localStorage.getItem("notificationTime")}
- ${localStorage.getItem("notificationDate")}
- ${localStorage.getItem("notificationGroup")}
+  notificationTime: ${localStorage.getItem("notificationTime")}
+  notificationDate: ${localStorage.getItem("notificationDate")}
+  notificationGroup: ${localStorage.getItem("notificationGroup")}
 
  
  `;
+ Swal.fire({
+   
+   html: storedData,
+   
+ });
 
- if(ff.value==='option1')
- {
-  Swal.fire({
-    
-  text:"Send Immedaitly",
-    
-});
-
+ 
  }
- else{
-  Swal.fire({
-    
-    html: storedData,
-    
-});
- }
-  
-
-}
-
 
 function pushNotification() {
     var dataArray = JSON.parse(localStorage.getItem('tagData'));
@@ -98,3 +84,4 @@ function pushNotification() {
 if (localStorage.getItem('tagData') != null) {
     pushNotification();
   }
+

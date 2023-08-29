@@ -19,7 +19,7 @@
     <section id="sidebar">
         <nav>
             <ul>
-                <div class="sidelist"id="logoMenu">
+                <div class="sidelist" id="logoMenu">
                     <img src="images/logo.png" alt="logo">
                     <a href="#">LOGO NAME</a>
                 </div>
@@ -48,7 +48,7 @@
                     <a href="#">Setting & notifications</a>
                 </div>
                 <div class="sidelist" id="logOut">
-                    <img src="images/logout.png" alt="logout" >
+                    <img src="images/logout.png" alt="logout">
                     <a href="#">Logout</a>
                 </div>
             </ul>
@@ -68,7 +68,7 @@
                     <li> <a href="tag.html">
                             Tags
                         </a></li>
-          
+
                     <li><a href="pushnotification.html" class="pushActive">
                             Pushnotification
                         </a></li>
@@ -78,16 +78,16 @@
         <div class="container">
             <h2 class="mt-5 mb-5">Push Notification</h2>
             <div class="mb-5">
-                <form id="form" >
+                <form id="form">
                     <div class="row">
 
                         <div class="form-group col-md-6 mb-3">
-                            <label for="">Notification Text</label>
+                            <label>Notification Text</label>
                             <input type="text" name="fName" id="notificationText" class="form-control"
                                 placeholder="Notification Text">
                         </div>
                         <div class="form-group col-md-6 mb-3">
-                            <label for="">Send To</label>
+                            <label>Send To</label>
                             <div class="input-group mb-3">
                                 <select class="custom-select" id="inputGroupSelect"
                                     aria-label="Example select with button addon">
@@ -103,15 +103,15 @@
                             <label for="">Sending Timing</label><br>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" >
-                                <label class="form-check-label" for="exampleRadios1">
+                                    value="immediate">
+                                <label class="form-check-label" for="sendImmediately">
                                     Send Immediately
                                 </label>
                             </div>
                             <div class=" form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                                    value="option2"checked>
-                                <label class="form-check-label" for="exampleRadios2">
+                                    value="custom" checked>
+                                <label class="form-check-label">
                                     Custom Time
                                 </label>
                             </div>
@@ -125,12 +125,12 @@
                                             class="search-icon fas fa-search"></i>
                                     </span>
                                 </div>
-                                <input type="text" class="form-control search" placeholder="Search Individual, Group & Tags"
-                                    aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control search"
+                                    placeholder="Search Individual, Group & Tags" aria-label="Username"
+                                    aria-describedby="basic-addon1">
                             </div>
 
                             <div class="mt-3">
-
                                 <div id="add_tag">
 
                                 </div>
@@ -140,21 +140,22 @@
                         <div class="form-row col-lg-12">
                             <div class="form-group col-md-3 formcontent">
 
-                                <label for="inputUrl">Date</label>
+                                <label>Date</label>
                                 <input type="date" class="form-control" id="inputDate"
                                     placeholder="Search Individual, Group & Tags" />
                             </div>
 
                             <div class="form-group col-md-3 formcontent">
 
-                                <label for="inputUrl">Time</label>
+                                <label>Time</label>
                                 <input type="time" class="form-control" id="inputTime"
                                     placeholder="Search Individual, Group & Tags" />
                             </div>
 
                             <div class="form-group col-md-4 mt-4">
 
-                                <button type="submit" id="ST" class="btn btn-primary mb-1 notbutton" onclick="pushDataNotification(event)">
+                                <button type="submit" id="ST" class="btn btn-primary mb-1 notbutton"
+                                    onclick="pushDataNotification(event)">
                                     Send Notifications
                                 </button>
                             </div>
@@ -179,8 +180,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="js/pushnotification.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </body>

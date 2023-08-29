@@ -18,28 +18,28 @@ function formEvent(event) {
   localStorage.setItem("Information", inputInfo);
  
   
-  const warningDiv=document.getElementById("error");
-  const warningDiv1=document.getElementById("error1");
-  const warningDiv2=document.getElementById("error2");
-  const warningDiv3=document.getElementById("error3");
-  const warningDiv4=document.getElementById("error4");
-  const warningDiv6=document.getElementById("error6");
+  const validationOne=document.getElementById("Msg1");
+  const validationTwo=document.getElementById("Msg2");
+  const validationThree=document.getElementById("Msg3");
+  const validationFour=document.getElementById("Msg4");
+  const validationFive=document.getElementById("Msg5");
+  const validationSix=document.getElementById("Msg6");
 
   if (evTitle==="" || inputStartDate===''|| inputEndDate ===''||inputStartTime===''|| inputEndTime==='' || inputInfo==='') {
-    warningDiv.textContent = "Title can not be empty , please try again ";
-    warningDiv1.textContent = "Please Select Start Date";
-    warningDiv2.textContent = "Please Select End Date ";
-    warningDiv3.textContent = "Select Start Time";
-    warningDiv4.textContent = "Select End Time";
-    warningDiv6.textContent = "Enter the Genral Information ";
+    validationOne.textContent = "Title can not be empty ";
+    validationTwo.textContent = "Please Select Start Date";
+    validationThree.textContent = "Please Select End Date ";
+    validationFour.textContent = "Select Start Time";
+    validationFive.textContent = "Select End Time";
+    validationSix.textContent = "Enter the Genral Information ";
     return;
   }else{
-    warningDiv.textContent = "";
-    warningDiv1.textContent = "";
-    warningDiv2.textContent = "";
-    warningDiv3.textContent = "";
-    warningDiv4.textContent = "";
-    warningDiv6.textContent = "";
+    validationOne.textContent = "";
+    validationTwo.textContent = "";
+    validationThree.textContent = "";
+    validationFour.textContent = "";
+    validationFive.textContent = "";
+    validationSix.textContent = "";
   }
 
 // if (inputStartDate==='') {
